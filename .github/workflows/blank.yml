@@ -18,8 +18,6 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v5.1.0
         with:
         role-to-assume: arn:aws:iam::069987675187:role/dfraschini
-          aws-access-key-id: 
-          aws-secret-access-key:
           aws-region: eu-west-1
 
       - name: List bucket
