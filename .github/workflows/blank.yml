@@ -13,13 +13,11 @@ jobs:
      id-token: write
     steps:
       - uses: actions/checkout@v4
-
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v5.1.0
         with:
-        role-to-assume: arn:aws:iam::069987675187:role/dfraschini
+          role-to-assume: arn:aws:iam::069987675187:role/dfraschini
           aws-region: eu-west-1
-
       - name: List bucket
         shell: bash        
         run: |
